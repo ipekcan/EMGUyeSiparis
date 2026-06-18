@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3jC6kjAb+AQ=",
+  "dgSpecHash": "k5+dLAxnxcc=",
   "success": true,
-  "projectFilePath": "C:\\Projects\\.NET\\EMGUyeSiparis\\EMGUyeSiparis.WebApi\\EMGUyeSiparis.WebApi.csproj",
+  "projectFilePath": "C:\\Users\\ipekc\\OneDrive\\Belgeler\\MyVSCodeProjects\\EMGUyeSiparis\\EMGUyeSiparis.WebApi\\EMGUyeSiparis.WebApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ipekc\\.nuget\\packages\\azure.core\\1.47.1\\azure.core.1.47.1.nupkg.sha512",
     "C:\\Users\\ipekc\\.nuget\\packages\\azure.identity\\1.14.2\\azure.identity.1.14.2.nupkg.sha512",
