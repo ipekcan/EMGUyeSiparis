@@ -1,0 +1,8 @@
+## .NET Geçici Dosyaları
+[Bb]in/
+[Oo]bj/
+*.exe
+*.dll
+*.pdb
+*.cache
+*.json.cache
