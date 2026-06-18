@@ -1,0 +1,43 @@
+@model EMGUyeSiparis.WebApi.Models.Uye
+
+@{
+    ViewData["Title"] = "Üye Düzenle";
+}
+
+<div class="container mt-4">
+    <h2>Üye Bilgilerini Düzenle</h2>
+    <hr />
+    <div class="row">
+        <div class="col-md-6">
+            <form asp-action="Edit" method="post">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <input type="hidden" asp-for="Id" />
+
+                <div class="form-group mb-3">
+                    <label asp-for="Isim" class="control-label fw-bold">İsim</label>
+                    <input asp-for="Isim" class="form-control" required />
+                    <span asp-validation-for="Isim" class="text-danger"></span>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label asp-for="Unvan" class="control-label fw-bold">Ünvan</label>
+                    <input asp-for="Unvan" class="form-control" />
+                    <span asp-validation-for="Unvan" class="text-danger"></span>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label asp-for="KanGrubu" class="control-label fw-bold">Kan Grubu</label>
+                    <select asp-for="KanGrubu" class="form-control" asp-items="ViewBag.KanGruplari">
+                        <option value="">-- Kan Grubu Seçiniz --</option>
+                    </select>
+                    <span asp-validation-for="KanGrubu" class="text-danger"></span>
+                </div>
+
+                <div class="form-group mt-4">
+                    <button type="submit" class="btn btn-primary">Değişiklikleri Kaydet</button>
+                    <a asp-action="Index" class="btn btn-secondary">İptal</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
